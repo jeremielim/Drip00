@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8e47b685503934749a5df876348da94a
-timeCreated: 1511729552
+guid: b164d6b97b2e84ab4969508430b6bdba
+timeCreated: 1511737599
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: H
+    4300000: L
     7400000: Default Take
     9500000: //RootNode
   externalObjects:

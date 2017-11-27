@@ -41,6 +41,9 @@ GameObject:
   - component: {fileID: 54257956521667070}
   - component: {fileID: 65704298825072672}
   - component: {fileID: 114525488174536078}
+  - component: {fileID: 114147767228275346}
+  - component: {fileID: 114369933857421396}
+  - component: {fileID: 114801048137579436}
   m_Layer: 0
   m_Name: H
   m_TagString: Untagged
@@ -95,6 +98,9 @@ GameObject:
   - component: {fileID: 54252474168907876}
   - component: {fileID: 65278403117728740}
   - component: {fileID: 114912431574699272}
+  - component: {fileID: 114053169719046254}
+  - component: {fileID: 114999834605571782}
+  - component: {fileID: 114273839672700980}
   m_Layer: 0
   m_Name: Y
   m_TagString: Untagged
@@ -131,6 +137,9 @@ GameObject:
   - component: {fileID: 54934830408869096}
   - component: {fileID: 65409572173599354}
   - component: {fileID: 114871352576530582}
+  - component: {fileID: 114291390799093902}
+  - component: {fileID: 114332766030191644}
+  - component: {fileID: 114718753900636986}
   m_Layer: 0
   m_Name: U
   m_TagString: Untagged
@@ -168,6 +177,9 @@ GameObject:
   - component: {fileID: 54675244562745232}
   - component: {fileID: 65007764885067108}
   - component: {fileID: 114762848826650300}
+  - component: {fileID: 114436429887936358}
+  - component: {fileID: 114086164966189308}
+  - component: {fileID: 114811411848044832}
   m_Layer: 0
   m_Name: T
   m_TagString: Untagged
@@ -205,6 +217,9 @@ GameObject:
   - component: {fileID: 54717147135077166}
   - component: {fileID: 65444260120905510}
   - component: {fileID: 114086734337514398}
+  - component: {fileID: 114732535038650932}
+  - component: {fileID: 114485409888940456}
+  - component: {fileID: 114909756653049438}
   m_Layer: 0
   m_Name: O
   m_TagString: Untagged
@@ -705,6 +720,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.54457104, y: 0.971591, z: 0.26599997}
   m_Center: {x: -0.0000004917383, y: 0.010850489, z: 0.249973}
+--- !u!114 &114053169719046254
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1378837586990180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1775717093, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114086164966189308
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869390394224682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 845409985, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114086734337514398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1061,7 +1098,7 @@ MonoBehaviour:
         height: 32
       isBreakpoint: 0
       isSequence: 0
-      hideUnused: 1
+      hideUnused: 0
       transitions:
       - fsmEvent:
           name: deleteSelf
@@ -1087,7 +1124,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000001
+        actionIsOpen: 000000000101
         actionStartIndex: 000000000200000005000000070000000e00000014000000
         actionHashCodes: 15264c0148c0110115264c015552ad05dfd72a047bce7604
         unityObjectParams: []
@@ -1185,12 +1222,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: destroyYThreshold
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 2.5
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -1600,7 +1637,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 0.1
         - useVariable: 1
           name: 
           tooltip: 
@@ -1880,7 +1917,84 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &114147767228275346
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050532658935372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1775717093, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114273839672700980
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1378837586990180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114291390799093902
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651392433321874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1775717093, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114332766030191644
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651392433321874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 845409985, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114369933857421396
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050532658935372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 845409985, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114436429887936358
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869390394224682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1775717093, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114485409888940456
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963182435269788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 845409985, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114523041128514022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1970,6 +2084,12 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
+        name: gM
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: nextChild
         tooltip: 
         showInInspector: 0
@@ -1982,7 +2102,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -2382,7 +2502,7 @@ MonoBehaviour:
         height: 32
       isBreakpoint: 0
       isSequence: 0
-      hideUnused: 1
+      hideUnused: 0
       transitions:
       - fsmEvent:
           name: deleteSelf
@@ -2408,7 +2528,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000001
+        actionIsOpen: 000000000100
         actionStartIndex: 000000000200000005000000070000000e00000014000000
         actionHashCodes: 15264c0148c0110115264c015552ad05dfd72a047bce7604
         unityObjectParams: []
@@ -2506,12 +2626,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: destroyYThreshold
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 2.5
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -2921,7 +3041,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 0.4
         - useVariable: 1
           name: 
           tooltip: 
@@ -3201,7 +3321,29 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &114718753900636986
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651392433321874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114732535038650932
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963182435269788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1775717093, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114762848826650300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3558,7 +3700,7 @@ MonoBehaviour:
         height: 32
       isBreakpoint: 0
       isSequence: 0
-      hideUnused: 1
+      hideUnused: 0
       transitions:
       - fsmEvent:
           name: deleteSelf
@@ -3584,7 +3726,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000001
+        actionIsOpen: 000000000100
         actionStartIndex: 000000000200000005000000070000000e00000014000000
         actionHashCodes: 15264c0148c0110115264c015552ad05dfd72a047bce7604
         unityObjectParams: []
@@ -3682,12 +3824,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: destroyYThreshold
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 2.5
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -4097,7 +4239,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 0.3
         - useVariable: 1
           name: 
           tooltip: 
@@ -4377,7 +4519,29 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &114801048137579436
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050532658935372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114811411848044832
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869390394224682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114871352576530582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4734,7 +4898,7 @@ MonoBehaviour:
         height: 32
       isBreakpoint: 0
       isSequence: 0
-      hideUnused: 1
+      hideUnused: 0
       transitions:
       - fsmEvent:
           name: deleteSelf
@@ -4760,7 +4924,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000001
+        actionIsOpen: 000000000100
         actionStartIndex: 000000000200000005000000070000000e00000014000000
         actionHashCodes: 15264c0148c0110115264c015552ad05dfd72a047bce7604
         unityObjectParams: []
@@ -4858,12 +5022,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: destroyYThreshold
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 2.5
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -5273,7 +5437,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 0.2
         - useVariable: 1
           name: 
           tooltip: 
@@ -5553,7 +5717,18 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &114909756653049438
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963182435269788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114912431574699272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5910,7 +6085,7 @@ MonoBehaviour:
         height: 32
       isBreakpoint: 0
       isSequence: 0
-      hideUnused: 1
+      hideUnused: 0
       transitions:
       - fsmEvent:
           name: deleteSelf
@@ -5936,7 +6111,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000001
+        actionIsOpen: 000000000100
         actionStartIndex: 000000000200000005000000070000000e00000014000000
         actionHashCodes: 15264c0148c0110115264c015552ad05dfd72a047bce7604
         unityObjectParams: []
@@ -6034,12 +6209,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: destroyYThreshold
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 2.5
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -6696,7 +6871,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -6714,7 +6889,7 @@ MonoBehaviour:
     handleTriggerEnter: 0
     handleTriggerExit: 0
     handleTriggerStay: 0
-    handleCollisionEnter: 1
+    handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
     handleParticleCollision: 0
@@ -6722,14 +6897,25 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 1
+    handleFixedUpdate: 0
     handleLateUpdate: 0
     handleApplicationEvents: 0
     handleLegacyNetworking: 0
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &114999834605571782
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1378837586990180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 845409985, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198008456536352544
 ParticleSystem:
   m_ObjectHideFlags: 1
