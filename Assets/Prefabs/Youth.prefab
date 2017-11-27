@@ -278,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378837586990180}
   m_LocalRotation: {x: -0, y: -0, z: -0.059015524, w: 0.9982571}
-  m_LocalPosition: {x: 1.02, y: 0, z: -0.27}
+  m_LocalPosition: {x: 1.02, y: -0.199, z: -0.212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4705440076379942}
@@ -333,7 +333,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651392433321874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3150207, y: 0, z: -0.40372658}
+  m_LocalPosition: {x: -0.3150207, y: -0.24, z: -0.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4219248881998906}
@@ -722,7 +722,7 @@ BoxCollider:
   m_Center: {x: -0.0000004917383, y: 0.010850489, z: 0.249973}
 --- !u!114 &114053169719046254
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378837586990180}
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114086164966189308
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1869390394224682}
@@ -1227,7 +1227,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2.5
+          value: 2
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -1920,7 +1920,7 @@ MonoBehaviour:
   eventHandlerComponentsAdded: 1
 --- !u!114 &114147767228275346
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050532658935372}
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114273839672700980
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378837586990180}
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114291390799093902
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651392433321874}
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114332766030191644
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651392433321874}
@@ -1964,7 +1964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114369933857421396
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050532658935372}
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114436429887936358
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1869390394224682}
@@ -1986,7 +1986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114485409888940456
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963182435269788}
@@ -2631,7 +2631,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2.5
+          value: 2
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -3324,7 +3324,7 @@ MonoBehaviour:
   eventHandlerComponentsAdded: 1
 --- !u!114 &114718753900636986
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651392433321874}
@@ -3335,7 +3335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114732535038650932
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963182435269788}
@@ -3829,7 +3829,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2.5
+          value: 2
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -4522,7 +4522,7 @@ MonoBehaviour:
   eventHandlerComponentsAdded: 1
 --- !u!114 &114801048137579436
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050532658935372}
@@ -4533,7 +4533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114811411848044832
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1869390394224682}
@@ -5027,7 +5027,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2.5
+          value: 2
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -5720,7 +5720,7 @@ MonoBehaviour:
   eventHandlerComponentsAdded: 1
 --- !u!114 &114909756653049438
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963182435269788}
@@ -6214,7 +6214,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2.5
+          value: 2
         - useVariable: 1
           name: curZ
           tooltip: 
@@ -6907,7 +6907,7 @@ MonoBehaviour:
   eventHandlerComponentsAdded: 1
 --- !u!114 &114999834605571782
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378837586990180}
